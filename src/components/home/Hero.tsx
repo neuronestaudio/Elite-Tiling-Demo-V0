@@ -37,7 +37,7 @@ export function Hero() {
               transition={{ duration: 0.6 }}
             >
               {/* Company Name */}
-              <h1 className="mb-8 text-8xl font-bold leading-tight text-white sm:text-9xl lg:text-10xl" style={{ fontSize: 'clamp(3rem, 13vw, 12rem)' }}>
+              <h1 className="mb-8 text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl" style={{ fontSize: 'clamp(1.2rem, 5.2vw, 4.8rem)' }}>
                 ELITE TILING
               </h1>
 
