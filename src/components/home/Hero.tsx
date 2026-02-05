@@ -27,8 +27,18 @@ export function Hero() {
       <div className="absolute inset-0 hero-bg opacity-70" />
 
       {/* Content */}
-      <div className="section-container relative z-10 flex min-h-screen items-center pb-20 pt-32">
-        <div className="grid gap-8 lg:grid-cols-2 lg:items-center w-full">
+      <div className="section-container relative z-10 flex min-h-screen items-center pb-20 pt-0">
+        {/* Logo background overlay */}
+        <div className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 z-0 lg:flex items-center justify-center hidden w-full">
+          <img
+            src="/Elite tiling logo.png"
+            alt="Elite Tiling"
+            className="h-auto opacity-30"
+            style={{ width: "200%", maxWidth: "9600px", objectFit: "contain" }}
+          />
+        </div>
+
+        <div className="grid gap-8 lg:grid-cols-2 lg:items-center w-full relative z-10">
           {/* Left Content */}
           <div>
             <motion.div
@@ -36,26 +46,35 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              {/* Company Name */}
-              <h1 className="mb-8 text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl" style={{ fontSize: 'clamp(1.2rem, 5.2vw, 4.8rem)' }}>
-                ELITE TILING
-              </h1>
+              <img
+                src="/Elite tiling logo.png"
+                alt="Elite Tiling"
+                className="mb-4 h-auto lg:hidden"
+                style={{ width: "80vw", maxWidth: "400px", objectFit: "contain" }}
+              />
 
-              {/* Pre-headline badge */}
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white/90 backdrop-blur-sm">
-                <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
-                Springvale & Melbourne-wide
+              {/* Main Headline with Location */}
+              <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:gap-4">
+                <h1
+                  className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl"
+                  style={{ fontSize: "3em" }}
+                >
+                  ELITE TILING
+                </h1>
+                <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white/90 backdrop-blur-sm w-fit">
+                  <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
+                  Springvale & Melbourne-wide
+                </div>
               </div>
 
-              {/* Main Headline */}
-              <h1 className="mb-6 text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
-                Experts in{" "}
-                <span className="text-gradient-gold">Tiling & Waterproofing</span>
-              </h1>
+              {/* Tagline */}
+              <p className="mb-8 text-xl font-semibold text-white sm:text-2xl uppercase">
+                Experts in <span className="text-accent">Tiling</span> & <span className="text-accent">Waterproofing</span>
+              </p>
 
               {/* Subheadline */}
               <p className="mb-8 text-lg text-white/80 sm:text-xl">
-                Reliable, compliant, and built to last. Quality craftsmanship for commercial and residential projects across Melbourne.
+                Reliable, compliant, and built to last. Quality craftsmanship for commercial and residential projects across Melbourne. With years of expertise and a commitment to excellence, we transform your spaces into stunning, durable masterpieces.
               </p>
 
               {/* CTAs */}
