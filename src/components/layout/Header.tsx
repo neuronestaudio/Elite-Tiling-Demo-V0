@@ -55,9 +55,9 @@ export function Header() {
           <div className="flex h-20 items-center justify-between">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3">
-              <img src="/Meisan_-removebg-preview.png" alt="Meisam Tiling & Stone" className="h-10 w-10" />
+              <img src="/Elite tiling logo.png" alt="Elite Tiling" className="h-10 w-10" />
               <span className={`hidden sm:block text-lg font-bold ${isScrolled ? "text-foreground" : "text-white"}`}>
-                Meisam Tiling & Stone
+                Elite Tiling
               </span>
             </Link>
 
